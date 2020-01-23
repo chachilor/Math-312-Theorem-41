@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{array}
+\newcolumntype{C}{>$c<$}
+
+%% Sets page size and margins.
+\usepackage{amsfonts,amssymb}
+\usepackage[margin=1in]{geometry}
+
+
+\title{Math 312\\Theorem 41}
+\author{Chachi Lor}
+\date{}
+
+\begin{document}
+\maketitle
+\underline{Proof.}
+
+Let $A$ and $B$ be mutually separated. Let $X = A \cup B$, by theorem 31, there exists $\overline{A}$ and $\overline{B}$.
+
+Consider $\overline{A} \cap X$ and $\overline{B} \cap X$, then
+\begin{center}
+$\overline{A} \cap X = \overline{A} \cap (A \cup B) = (\overline{A} \cap A) \cup (\overline{A} \cap B) = A \cup \phi = A$
+\end{center}
+
+and
+
+\begin{center}
+$\overline{B} \cap X = \overline{B} \cap (A \cup B) = (\overline{B} \cap A) \cup (\overline{B} \cap B) = B \cup \phi = B$.
+\end{center}
+
+So $A = \overline{A} \cap X \text{ and } B = \overline{B} \cap X$, by definition pf relatively closed, $A$ and 
+$B$ are relatively closed in 
+
+their union. $\Box$
+
+\end{document}
